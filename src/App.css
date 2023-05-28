@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-ul {
+  padding: 12px 12px 12px 60px;
+  margin: 0px;
+  background-color: skyblue;
+  box-shadow: 0 0 6px #5e5e5e9c;
+  border-bottom: 1.5px solid rgb(68, 68, 68);
+}
+
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-ul li a:hover {
+  color: rgb(113, 155, 218);
+  border: 0.5 solid black;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.footer {
+  background-color: skyblue;
+  padding: 2px;
+  text-align: center;
+  background-color: hsl(197deg 71% 73%);
+  padding: 2px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.register,
+.product {
+  margin-left: 30%;
+}
+
+.login {
+  margin-left: 30%;
+}
+
+.inputBox {
+  padding: 7px;
+  display: block;
+  border: 1px solid skyblue;
+  width: 300px;
+  margin: 20px;
+}
+
+.appButton {
+  margin: 20px;
+  width: 150px;
+  padding: 10px;
+  background-color: skyblue;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  box-shadow: rgb(0 0 0 / 27%) 0px 0px 12px;
+  border: 1px solid rgb(189, 14, 14);
+  border-radius: 50%;
+  margin: 12px;
+  position: absolute;
+  z-index: 444444;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.invalid-input {
+  display: block;
+  color: red;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+.product-box {
+  display: flex;
+  text-align: center;
+  /* margin: 10px 12px; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-box ul li {
+  display: inline-block;
+  word-break: break-all;
+  border: 1px solid hsl(197deg 71% 73%);
+  padding: 4px;
+  width: 100%;
+}
+
+.product-box ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 90%;
+}
+
+.search-product-box {
+  margin: 20px;
+  height: 38px;
+  padding-left: 30px;
+  border: solid 1px skyblue;
+  width: 50%;
+}
+
+.delete-btn {
+  color: white;
+  padding: 4px 6px;
+  background-color: red;
+  box-shadow: 0 0 4px gray;
+  border: 0px;
+  border-radius: 4px;
+  outline: #282c34 2px;
+  cursor: pointer;
+
+}
+.update-btn:hover,
+.delete-btn:hover {
+  box-shadow: 0px 0px 4px black;
+}
+
+.update-btn {
+  border: 0px;
+  border-radius: 4px;
+  padding: 4px 6px;
+  background: green;
+  text-shadow: 0 0 4px gray;
+  margin: 0 2px;
+}
+
+.update-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.product-list>li {
+  background: #61dafb;
+  font-weight: 600;
+}
+
+.Profile {
+  text-align: center;
+
+
+}
+
+.Profile::before {
+  position: relative;
+  top: 12px;
+  width: 0;
+  height: 0;
+  content: " ";
+  color: pink;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid skyblue;
+}
+
+.Profile:hover.Profile::before {
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-top: 10px solid #ff0101;
+  top: 25px;
+  filter: drop-shadow(0px 4px black);
+}
+
+.Profile i {
+  color: rgba(0, 136, 18, 0.521);
+  text-decoration: underline;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.Profile b {
+  text-transform: capitalize;
+  color: rgba(0, 136, 18, 0.521);
+}
+
+.Page404 {
+  text-align: center;
+}
+
+.toggle-btn {
+  display: none;
+  padding: 4px 10px;
+  background: hsl(197deg 71% 73%);
+  border: 1.5px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 4px grey;
+}
+
+@media screen and (max-width:650px) {
+
+  .nav-ul {
+    padding: 60px 6px 0px 4px;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    /* right: 100%; */
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    right: 0;
+    height: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e3e46ed;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    transition: all 0.4s ease;
+    z-index: 100;
+  }
+
+
+  .register,
+  .product {
+    margin-left: 20%;
+  }
+
+  .inputBox {
+    width: 200px;
+  }
+
+  .logo {
+    position: relative;
+  }
+
+  .toggle-btn {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 3333;
+  }
+
+  .delete-btn,
+  .update-btn {
+    font-size: 10px;
+    padding: 4px;
+    margin: 1px;
+  }
+
+  .product-box ul li {
+    padding: 0;
+  }
+
+  .product-box ul {
+    width: 98%;
+  }
+}
