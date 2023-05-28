@@ -27,7 +27,7 @@ const UpdateProduct = () => {
     }
     useEffect(() => {
         getProductDetails();
-    })
+    },[])
 
     const updateProduct = async () => {
         console.warn(name, price, category, company)
