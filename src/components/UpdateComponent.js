@@ -8,7 +8,7 @@ const UpdateProduct = () => {
     const [company, setCompnay] = React.useState('');
     const params = useParams();
     const navigate = useNavigate();
-    const hostname = "http://localhost:5000";
+    const hostname = "https://e-commerceak.onrender.com";
 
     const getProductDetails = async () => {
         console.warn(params)

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 const ProductList = () => {
     const [products, setProducts] = useState([]);
-    const hostname = "http://localhost:5000";
+    const hostname = "https://e-commerceak.onrender.com";
 
     useEffect(() => {
         getProducts();
